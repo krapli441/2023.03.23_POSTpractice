@@ -1,6 +1,3 @@
-// const http = require('http');
-// 웹 서버를 만들기 위해 http 모듈 가져옴. (commonJS 방식으로)
-
 import http from 'http';
 // ? 웹 서버를 만들기 위해 esm 방식으로 모듈을 가져옴
 
