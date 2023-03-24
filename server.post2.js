@@ -32,7 +32,7 @@ let mainPage = `
 `
 // ? 자바스크립트로 '문자열'을 넣기 위해 form 태그와 html 기본 양식을 지역변수에 담아줌.
 
-function resultPage (text) {
+function resultPage (name) {
   return `<!DOCTYPE html>
   <html lang="en">
   <head>
@@ -42,7 +42,7 @@ function resultPage (text) {
   <title>Document</title>
   </head>
   <body>
-    <h1>환영합니다, ${text}님.
+    <h1>환영합니다, ${name}님.</h1> 
   </body>
   </html>
   `
