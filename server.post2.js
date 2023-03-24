@@ -59,9 +59,9 @@ const server = http.createServer(function(request, response){
       textData = textData + data; // textData에 'data' 값을 담아줌.
     });
     request.on('end', function(){
-      let parsedData = qs.parse(textData);
-      console.log(parsedData.id);
-      response.end(resultPage(parsedData.id));
+      let parsedData = qs.parse(textData); // ! qs 모듈을 이용하여 값을 parsing함.
+      console.log(parsedData.id); // ? 값이 잘 들어왔는지 확인.
+      response.end(resultPage(parsedData.id)); // ! 값이 확인됐다면, 페이지에 출력.
     })
   }
 });
